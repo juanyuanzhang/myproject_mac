@@ -8,6 +8,11 @@ public class Hello {
         p.weight = 66.5f;
         p.height = 1.7f;
         System.out.println(p.bmi());
+
+        int score = 88;
+        System.out.println( score <69 || score >=60 );
+        char c ='A';
+        System.out.println(c<'a');
         /* 屬性 Field
         int age = 19 ;
         Integer age2 = 19; //基本資料型態的包裝型態

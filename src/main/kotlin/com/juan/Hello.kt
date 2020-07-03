@@ -4,6 +4,10 @@ fun main() {
     //print("Hello Kotlin")
     val h = Human(weight=66.5f,height=1.7f) //物件有變數所以要帶入（）內
     println(h.bmi())
+    val score = 88
+    println(score>60)
+    val c :Char ='A' //val c ='A'
+    println(c.toInt() > 60)
     /*var age = 19 // var age : Int = 19 宣告資料類型可以省略
     age = 20
     var weight = 66.5f
