@@ -1,7 +1,17 @@
 package com.juan.student
 
+import java.util.*
+
 fun main(args: Array<String>) {
-    val stu = Student("Yuan", 66 ,88)
+    val scanner = Scanner(System.`in`) // in在kotlin是關鍵字 需加上種音符號``
+    print("Please enter student's name：")
+    var name = scanner.next()
+    print("Please enter student's english:")
+    var english = scanner.nextInt()
+    print("Please enter student's math:")
+    var math = scanner.nextInt()
+
+    val stu = Student("name", english ,math)
     stu.print()
 }
 
