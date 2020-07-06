@@ -12,6 +12,17 @@ public class Student {
         this.math = math;
     }
 
+    public int hieght() {
+        int max = (math > english) ? math : english ;//三元式運算
+        //int max = 0;
+//        if (math > english){
+//            max = math;
+//        } else {
+//            max = english;
+//        }
+        return (math > english) ? math : english;
+    }
+
     public void print(){
         System.out.println(name+"\t"+english+"\t"+math
         +"\t"+(english+math)/2);
