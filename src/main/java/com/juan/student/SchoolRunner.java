@@ -7,7 +7,7 @@ public class SchoolRunner {
         //userInput();
         Student stu = new Student("Yuan",77,99); //Student物件
         stu.print();
-        System.out.println("High score: "+stu.hieght());
+        System.out.println("High score: "+stu.highest());
     }
 
     private static void userInput() {
@@ -21,6 +21,6 @@ public class SchoolRunner {
 
         Student stu = new Student(name,english,math); //Student物件
         stu.print();
-        System.out.println("High score: "+stu.hieght());
+        System.out.println("High score: "+stu.highest());
     }
 }

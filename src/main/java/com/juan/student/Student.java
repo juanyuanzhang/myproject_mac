@@ -12,7 +12,7 @@ public class Student {
         this.math = math;
     }
 
-    public int hieght() {
+    public int highest() {
         int max = (math > english) ? math : english ;//三元式運算
         //int max = 0;
 //        if (math > english){
@@ -24,7 +24,16 @@ public class Student {
     }
 
     public void print(){
-        System.out.println(name+"\t"+english+"\t"+math
-        +"\t"+(english+math)/2);
+        System.out.print(name+"\t"+english+"\t"+math
+        +"\t"+getAverage());
+        if (getAverage() >= 60 ) {
+            System.out.println(" PASS");
+        } else {
+            System.out.println(" FAILED");
+        }
+    }
+
+    public int getAverage() {
+        return(english+math)/2;
     }
 }
