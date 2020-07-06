@@ -3,7 +3,14 @@ package com.juan;
 public class Hello {
     public static void main(String[] args) {
         //System.out.println("Hello World");
-        Person p = new Person("Yuan",66.5f,1.7f);
+        //String s =null;
+        String s = "abcdef";
+        System.out.println(s.charAt(3));
+        System.out.println(s.length());
+        System.out.println(s.substring(3));//取第3個之後的值
+        System.out.println(s.substring(3,5));//取第3個到第5-1個的值
+
+        Person p = new Person("Yuan",66.5f,1.7f);//參照資料型態
         p.hello();
         p.weight = 66.5f;
         p.height = 1.7f;

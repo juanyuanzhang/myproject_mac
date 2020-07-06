@@ -1,6 +1,11 @@
 package com.juan
 
 fun main() {
+    var s :String? = "abcdef"//給變數值後就不能再設成null , 要的話要宣告資料型態後加上？
+    s = null
+    println(s?.length) //變數為null會警告不能只用方法 , 硬要使用的話要加上? , 這樣就算變數為NULL也不換產生例外會直接給null , 若要產生例外就把？改成!!
+    println(s?.get(3)) //取得第3個值
+    println(s?.substring(3))
     //print("Hello Kotlin")
     val h = Human(weight=66.5f,height=1.7f) //物件有變數所以要帶入（）內
     println(h.bmi())
