@@ -17,7 +17,7 @@ public class Game {
                 System.out.println("higher");
             }else if (number > secret) {
                 System.out.println("lower");
-            }else if(number == secret){
+            }else {
                 System.out.println("Great, the number is "+number );
             }
             //System.out.println(number);
