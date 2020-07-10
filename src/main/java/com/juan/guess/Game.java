@@ -10,7 +10,7 @@ public class Game {
         System.out.println(secret);
         Scanner scanner = new Scanner(System.in);
         int number = 0;
-        while(number != secret ) {
+        while(number != secret ) {  //判斷條件
             System.out.print("Please enter a number:");
             number = scanner.nextInt();
             if(number < secret) {
