@@ -1,10 +1,10 @@
-package com.juan.student
+package com.juan
 
 import java.util.*
 
 fun main(args: Array<String>) {
     //userInput()
-    val stu = Student_k("Yuan", 10, 99)
+    val stu = Student("Yuan", 10, 99)
     stu.print()
     //stu.nameCheck()
     //println("Hight score: "+stu.highest())
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
     println("Hight score: ${stu.highest()}")
 }
 
-class Student_k(var name: String? ,var english: Int ,var math: Int) {
+class Student(var name: String? ,var english: Int ,var math: Int) {
     fun print(){
         println("$name\t$english\t$math\t${getAverage()}\t${passOrFaiked()}\t${grading()}")
         /*print(name+ "\t" + english + "\t" + math
@@ -80,7 +80,7 @@ private fun userInput() {
     print("Please enter student's math:")
     var math = scanner.nextInt()
 
-    val stu = Student_k(name, english, math)
+    val stu = Student(name, english, math)
     stu.print()
     stu.nameCheck()
 }
