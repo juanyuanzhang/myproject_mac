@@ -11,8 +11,19 @@ import java.util.Date;
 
 public class Tester {
     public static void main(String[] args) {
-        //java8
-        java8();
+        LocalDateTime enter =
+                LocalDateTime.of(2020,07,31,
+                        12,0,0,0);
+        LocalDateTime leave =
+                LocalDateTime.of(2020,07,31,
+                        14,0,0,0);
+        Car car = new Car("AAA-0001",enter);
+        car.setLeave(leave);
+        System.out.println(car.getDuration());
+        long hours = (long)Math.ceil(car.getDuration()/60.0);
+        System.out.println(hours);
+        System.out.println(30*hours);
+        //java8();
         //java();
     }
 
