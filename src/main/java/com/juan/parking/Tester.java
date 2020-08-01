@@ -18,9 +18,9 @@ public class Tester {
                 LocalDateTime.of(2020,07,31,
                         14,0,0,0);
         Car car = new Car("AAA-0001",enter);
-        car.setLeave(leave);
-        System.out.println(car.getDuration());
-        long hours = (long)Math.ceil(car.getDuration()/60.0);
+        car.setLeave(leave); //設定離場時間
+        System.out.println(car.getDuration());//計算停留分鐘數
+        long hours = (long)Math.ceil(car.getDuration()/60.0);//計算停留幾小時 Math.ceil()無條件進位
         System.out.println(hours);
         System.out.println(30*hours);
         //java8();
